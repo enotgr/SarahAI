@@ -71,8 +71,6 @@ INCREASE_BRIGHTNESS_COMMANDS = ['прибавь яркость']
 DECREASE_BRIGHTNESS_COMMANDS = ['убавь яркость']
 SET_BRIGHTNESS_COMMANDS = ['установи яркость на']
 
-THANKS_COMMANDS = ['спасибо', 'благодар']
-
 WEATHER_COMMANDS = ['погода']
 
 TALK_COMMANDS = [

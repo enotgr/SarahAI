@@ -35,4 +35,4 @@ if __name__ == '__main__':
   speaker = Speaker()
   audio_frame_getter = AudioFrameGetter()
   command_handler = CommandHandler(voice_recognizer, speaker, audio_frame_getter)
-  command_handler.listening()
+  command_handler.listen()

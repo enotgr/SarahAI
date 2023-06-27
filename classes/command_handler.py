@@ -23,11 +23,11 @@ class CommandHandler:
     self._is_running: bool = False
     self._silence_count: int = 0
 
-  def listening(self):
+  def listen(self):
     self._is_running = True
     while self._is_running:
       if self._is_chat_active:
-        self._phrase_handler()
+        self._handle_phrase()
         continue
       else:
         self._check_activate()
@@ -55,7 +55,7 @@ class CommandHandler:
         self._audio_frame_getter.close()
         self._porcupine_handler.delete()
 
-  def _phrase_handler(self):
+  def _handle_phrase(self):
     phrase: str = ''
     self._silence_count = 0
     while self._is_chat_active:
